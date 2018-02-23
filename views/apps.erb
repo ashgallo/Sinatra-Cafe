@@ -1,0 +1,20 @@
+<h1 class="center">Dash Coffee</h1>
+<div class="row">
+  <% @apps.each do |app| %>
+    <div class="col s12 m3">
+      <div class="card green lighten-3">
+        <div class="card-content grey darken-3-text">
+          <span class="card-title"><%= app.title %></span>
+          <p><%= app.description %></p> 
+        </div>
+        <div class="card-action">
+            <a class="btn" href="/apps/<%= app.id %>/edit">Edit</a>
+            <form action="/apps/<%= app.id %>" method="POST">
+              <input type="hidden" name="_method" value="DELETE">
+              <button class="btn red">Delete</button>
+            </form>
+        </div>
+      </div>
+    </div>
+  <% end %>
+</div>
