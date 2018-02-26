@@ -1,6 +1,11 @@
   class Coffee < Sinatra::Base
+
   get "/" do
     erb :home
+  end
+
+  get "/apps/admin" do
+    erb :admin
   end
 
   get "/apps/new" do
@@ -9,7 +14,7 @@
 
   post "/apps" do
     App.create(title: params[:title], description: params[:description])
-    redirect "/"
+    redirect "/apps"
   end
 
   get "/apps" do

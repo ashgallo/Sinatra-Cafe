@@ -1,9 +1,10 @@
 source 'https://rubygems.org'
 
+gem "sinatra"
+gem 'rack'
 gem "activerecord"
 gem "sinatra-activerecord"
 gem "rake"
-gem "sinatra"
 
 group :test, :development do
   gem 'pry'

@@ -1,0 +1,44 @@
+body {
+  background-image: url("/Users/ashgallo/Desktop/public/css/images/coffee_background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center; 
+  background-color: #9b4747;
+}
+
+h1 {
+  font-family: fantasy;
+  font-size: 75px;
+  text-align: left;
+  margin-top: 55px;
+  margin-left: 80px;
+}
+
+.menu-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.menu-grid {
+  width: 415px;
+  height: 600px;
+  display: flex;
+  position: fixed; 
+  top: 50%;
+  left: 50%;
+  justify-content: flex-end;
+  align-items: stretch;
+  background-color: rgb(198, 175, 175)
+}
+
+.menu-grid-left {
+  display: flex
+  border: 1px solid rgb(4, 12, 4);
+}
+
+.menu-grid-right {
+  order: -1;
+  background-color: blue;
+}
+
+

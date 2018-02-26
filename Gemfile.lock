@@ -49,6 +49,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord
   pry
+  rack
   rack-test
   rake
   sinatra
